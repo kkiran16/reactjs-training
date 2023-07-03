@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React + JSX</title>
+    <script src="https://unpkg.com/react@18.1.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.1.0/umd/react-dom.development.js"></script>
+
+    <!-- Comment out this first and explain  -->
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  </head>
+  <body>
+    <div id="root" />
+    <!-- <script type="module"> -->
+    <!-- The browser won't be touching any of this code as the text attribute says as text/babel -->
+    <!-- 01 -->
+    <!--  <script type="text/babel">
+      const elementHelloWorld = <div>Hello World</div>;
+
+      const rootEle = ReactDOM.createRoot(document.getElementById("root"));
+      rootEle.render(elementHelloWorld);
+    </script> -->
+
+    <!-- 02 -->
+    <!--     <script type="text/babel">
+      function message({ children }) {
+        return <div>{children}</div>;
+      }
+
+      const helloEle = React.createElement(message, null, "Hello World");
+      const rootEle = ReactDOM.createRoot(document.getElementById("root"));
+      rootEle.render(helloEle);
+    </script> -->
+
+    <!-- 03 -->
+    <!-- <script type="text/babel">
+      function message({ children }) {
+        return <div>{children}</div>;
+      }
+
+      //   React.createElement('div', null, 'Hello World') == <div>Hello World</div>
+
+      //   const helloEle = React.createElement(message, null, "Hello World");
+      const helloEle = <message>Hello World</message>;
+
+      const rootEle = ReactDOM.createRoot(document.getElementById("root"));
+      rootEle.render(helloEle);
+    </script> -->
+
+    <!-- 04 -->
+    <script type="text/babel">
+      function Message({ children }) {
+        return <div>{children}</div>;
+      }
+
+      //   React.createElement('div', null, 'Hello World') == <div>Hello World</div>
+
+      //   const helloEle = React.createElement(message, null, "Hello World");
+      const helloEle = <Message>Hello World</Message>;
+
+      const rootEle = ReactDOM.createRoot(document.getElementById("root"));
+      rootEle.render(helloEle);
+    </script>
+  </body>
+</html>

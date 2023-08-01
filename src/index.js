@@ -15,8 +15,12 @@ import reportWebVitals from "./reportWebVitals";
 // import App from "./02-react-hooks/UseReducer/00-UseReducerProblemStatement";
 // import App from "./02-react-hooks/UseReducer/01-UseReducer";
 
-import App from "./02-react-hooks/UseCallback/02-Counter/Counter";
+// import App from "./02-react-hooks/UseCallback/02-Counter/Counter";
 // import App from "./02-react-hooks/UseCallback/01-SlowApplication/App";
+
+// import App from "./02-react-hooks/UseContext/00-WithoutContext";
+// import App from "./02-react-hooks/UseContext/01-SimpleContext";
+import App from "./02-react-hooks/UseContext/02-OptimizingContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

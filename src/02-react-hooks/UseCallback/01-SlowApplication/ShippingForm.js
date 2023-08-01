@@ -5,10 +5,10 @@ const ShippingForm = memo(function ShippingForm({ onSubmit }) {
 
   console.log("[ARTIFICIALLY SLOW] Rendering <ShippingForm />");
   let startTime = performance.now();
-  while (performance.now() - startTime < 500) {
+  /*  while (performance.now() - startTime < 3000) {
     // Do nothing for 500 ms to emulate extremely slow code
     console.log("I am slow..!!");
-  }
+  } */
 
   console.log("After slow code executin");
 

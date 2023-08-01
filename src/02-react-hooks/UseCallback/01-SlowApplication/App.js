@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ProductPage from "./ProductPage.js";
 
+import "./styles.css";
+
 export default function App() {
   const [isDark, setIsDark] = useState(false);
   return (

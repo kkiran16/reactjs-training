@@ -26,6 +26,10 @@ function App() {
     { id: 3, name: "watching TV" },
   ]);
 
+  React.useEffect(() => {
+    console.log("I am executed");
+  });
+
   /* const addTodo = () => {
     setTodos((todos) => [
       ...todos,

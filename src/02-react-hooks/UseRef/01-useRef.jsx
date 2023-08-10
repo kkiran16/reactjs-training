@@ -21,7 +21,7 @@ export default App; */
 
 //02 - Timer Example - Without Ref
 // First on Browser snippet
-/* function Timer() {
+function Timer() {
   const [time, setTime] = React.useState("");
   React.useEffect(() => {
     setInterval(() => {
@@ -40,10 +40,10 @@ function App() {
       <Timer />
     </>
   );
-} */
+}
 
 //03 - Timer Example - with Ref
-function Timer() {
+/* function Timer() {
   const [time, setTime] = React.useState("");
   const timerRef = React.useRef();
 
@@ -68,6 +68,6 @@ function App() {
       <Timer />
     </>
   );
-}
+} */
 
 export default App;

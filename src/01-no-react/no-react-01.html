@@ -10,11 +10,30 @@
     <div id="root"></div>
 
     <script type="module">
-      const divTest = document.createElement("div");
-      divTest.textContent = "Hello World";
+      const divEle = document.createElement("div");
+      divEle.textContent = "Hell World";
+
+      const btnEle = document.createElement("button");
+      btnEle.textContent = "I am a Button ELement";
+
+      const radioEle = document.createElement("input");
+      radioEle.type = "radio";
+
+      const checkboxEle = document.createElement("input");
+      checkboxEle.type = "checkbox";
 
       const rootEle = document.getElementById("root");
-      rootEle.append(divTest);
+
+      function handleClickBtn() {
+        alert("Hello Guys, Good Morning");
+      }
+
+      btnEle.addEventListener("click", handleClickBtn);
+
+      rootEle.append(divEle);
+      rootEle.append(btnEle);
+      rootEle.append(radioEle);
+      rootEle.append(checkboxEle);
     </script>
   </body>
 </html>

@@ -33,12 +33,36 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <!--  <div class="container">
       <div class="parent"></div>
       <button id="add-child">Add achild</button
       ><button id="remove-child">Remove a Child</button>
+    </div> -->
+
+    <div class="container">
+      <div class="parent">parent</div>
+      <button id="add-child" type="button">Add a Child</button>
+      <button id="remove-child" type="button">Remove a Child</button>
     </div>
   </body>
+  <script type="module">
+    const parent = document.querySelector(".parent");
+
+    const addChild = document.querySelector("#add-child");
+    addChild.addEventListener("click", () => {
+      const child = document.createElement("div");
+      child.classList.add("child");
+      child.textContent = "I am Child";
+
+      parent.appendChild(child);
+    });
+
+    const removeChild = document.body.querySelector("#remove-child");
+    removeChild.addEventListener("click", () => {
+      const childEle = document.querySelector(".child");
+      parent.removeChild(childEle);
+    });
+  </script>
 </html>
 
 <!--  <div class="container">

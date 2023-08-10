@@ -182,7 +182,7 @@ function Form() {
   );
 } */
 
-// 09 Mutating an Object
+// 09 Mutating an Object - explain about Object.is
 function Greeting({ initialValue }) {
   const [name, setName] = React.useState({ message: "JPMC" });
 
@@ -191,6 +191,7 @@ function Greeting({ initialValue }) {
 
     // name.message = event.target.value;
     // setName(name);
+    // Object.is problem
 
     setName({ ...name, message: event.target.value });
   }
@@ -199,7 +200,7 @@ function Greeting({ initialValue }) {
       <label htmlFor="username">User Name : </label>
       <input
         type="text"
-        // value={name.message}
+        value={name.message}
         id="username"
         onChange={handleChange}
       />
@@ -209,10 +210,9 @@ function Greeting({ initialValue }) {
 }
 
 function App() {
-  return <Greeting />;
-  // return <Greeting initialValue="JPMC" />;
+  // return <Greeting />;
+  return <Greeting initialValue="JPMC" />;
   // return <Counter />;
-
   // return <Reset />;
 }
 

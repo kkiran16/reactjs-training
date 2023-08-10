@@ -29,7 +29,7 @@ function App() {
   return <Greeting initialValue="JPMC" />;
 }*/
 
-// 02 Store into localStorage only when the storing data is modified but not on every renderinf of the component.
+// 02 Store into localStorage only when the storing data is modified but not on every rendering of the component.
 /* function Greeting({ initialValue }) {
   const [name, setName] = React.useState(
     window.localStorage.getItem("name") || initialValue

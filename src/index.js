@@ -9,7 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 // import App from "./02-react-hooks/UseEffect/02-UseEffectCleanUp";
 // import App from "./02-react-hooks/ReactFlow/01-reactFlow";
 // import App from "./02-react-hooks/UseState/02-LiftingState";
-// import App from "./02-react-hooks/UseRef/01-useRef";
+import App from "./02-react-hooks/UseRef/01-useRef";
 // import App from "./02-react-hooks/UseRef/02-useRef-dom";
 // import App from "./02-react-hooks/UseRef/02-useRef-dom";
 // import App from "./02-react-hooks/UseReducer/00-UseReducerProblemStatement";
@@ -20,7 +20,7 @@ import reportWebVitals from "./reportWebVitals";
 
 // import App from "./02-react-hooks/UseContext/00-WithoutContext";
 // import App from "./02-react-hooks/UseContext/01-SimpleContext";
-import App from "./02-react-hooks/UseContext/02-OptimizingContext";
+// import App from "./02-react-hooks/UseContext/02-OptimizingContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
